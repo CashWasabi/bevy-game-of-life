@@ -1,0 +1,18 @@
+[package]
+name = "base"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# remove dynamic before release
+bevy = { version = "0.5.0", features = ["dynamic"] }
+rand = "0.8.4"
+grid = "0.6.0"
+
+[patch.crates-io]
+# use this for getting latest patch
+#bevy = {git = "https://github.com/bevyengine/bevy"}
+# if local folder exists
+#bevy = { path = "../bevy" }

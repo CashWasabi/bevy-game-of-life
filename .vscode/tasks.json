@@ -1,0 +1,15 @@
+{
+    "type": "lldb",
+    "request": "launch",
+    "name": "Debug example 'game-of-life'",
+    "cargo": {
+        "args": [
+            "build",
+        ],
+    },
+    "args": [],
+    "cwd": "${workspaceFolder}",
+    "env": {
+        "CARGO_MANIFEST_DIR": "${workspaceFolder}",
+    }
+}
